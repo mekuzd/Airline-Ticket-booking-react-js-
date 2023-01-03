@@ -1,7 +1,12 @@
 import { react } from "react";
+import DefaultLayout from "./Layouts/DefaultLayouts";
 
 function App() {
-  return <h1> Airline Logo</h1>;
+  return (
+    <>
+      <DefaultLayout />
+    </>
+  );
 }
 
 export default App;
