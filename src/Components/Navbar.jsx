@@ -4,6 +4,7 @@ import { AiOutlineLogin } from "react-icons/ai";
 
 import Sidebar from "./Sidebar";
 import Dropdown from "./Dropdown";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -22,7 +23,9 @@ const Navbar = () => {
     <nav className="shadow">
       {/* mobile navbar  */}
 
-      <h4>Mekuz Airline</h4>
+      <Link to={"/"} className="fs-3">
+        Mekuz Airline
+      </Link>
 
       <button className="d-block d-md-none ms-auto barsbtn ">
         <FaBars className="bars" onClick={handleShow} />
@@ -54,13 +57,15 @@ const Navbar = () => {
       </div>
 
       <div className="d-none d-md-flex justify-content-center align-items-center">
-        <li className="links fs-5 ">SignUp</li>
-        <li className="mx-4 links fs-5  ">
+        <Link to={"/signup"} className="links fs-5 ">
+          SignUp
+        </Link>
+        <Link to={"/login"} className="mx-4 links fs-5  ">
           Login{" "}
           <span>
             <AiOutlineLogin />
           </span>
-        </li>
+        </Link>
       </div>
     </nav>
   );

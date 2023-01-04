@@ -31,13 +31,20 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
-button:hover {
-  border-color: #646cff;
+a {
+  text-decoration: none;
+  color: #434550;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+a:hover {
+  color: #434550;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.registerbtn {
+  min-width: 100px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -82,10 +89,12 @@ nav {
   width: fit-content;
   min-width: 250px;
 }
-
-.booknow-btn {
-  border-radius: 20px;
-  padding: 10px;
+.error {
+  width: 700px;
+  margin: auto;
+}
+.error img {
+  width: 100%;
 }
 .travel {
   margin-top: 80px;
@@ -119,8 +128,12 @@ li {
   box-shadow: 0px 2px purple;
 }
 .tabcontent {
+  display: none;
+}
+.activetabcontent {
   margin-top: 20px;
   padding: 20px;
+  display: block;
 }
 .form-control {
   width: 200px;
@@ -135,6 +148,27 @@ li {
 select {
   width: 200px;
   height: 50px;
+}
+.bookNowBtn {
+  padding: 10px;
+  border-radius: 10px;
+}
+.tabcontentBtn {
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  margin-top: auto;
+}
+.tabcontentBtn:hover {
+  border-color: rgb(46, 27, 46);
+  background-color: rgb(46, 27, 46);
+  color: white;
+}
+
+.bookNowBtn:hover {
+  border-color: rgb(46, 27, 46);
+  background-color: rgb(46, 27, 46);
+  color: white;
 }
 
 @media only screen and (min-width: 680px) {
