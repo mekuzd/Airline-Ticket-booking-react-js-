@@ -21,6 +21,8 @@ a:hover {
 }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
@@ -28,18 +30,6 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
 }
 
 button:hover {
@@ -58,13 +48,52 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-.offcanvas {
-  background-color: inherit;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
 }
-.slideout {
-  transition: all 1s linear;
+.booktabs {
+  /* margin: auto 20px; */
+  margin: auto;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  width: 95%;
 }
 
+.activeTab {
+  color: rgb(214, 112, 112);
+  border: none;
+  padding: 10px;
+  width: 250px;
+  background-color: transparent;
+}
+
+.tabBtn {
+  color: #434550;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: fit-content;
+  min-width: 250px;
+}
+
+.booknow-btn {
+  border-radius: 20px;
+  padding: 10px;
+}
+.travel {
+  margin-top: 80px;
+}
+.planeImg {
+  border-radius: 100px;
+  width: 100%;
+}
 .barsbtn {
   border: none;
   background-color: transparent;
@@ -82,10 +111,55 @@ li {
 }
 .card {
   position: absolute;
-  top: 50px;
+  top: 35px;
   left: 30px;
 }
 .links:hover {
   transition: all 0.3s ease-in;
-  box-shadow: 0px 2px rgb(1, 1, 51);
+  box-shadow: 0px 2px purple;
+}
+.tabcontent {
+  margin-top: 20px;
+  padding: 20px;
+}
+.form-control {
+  width: 200px;
+  padding: 10px;
+}
+.form-control :focus {
+  outline: black !important;
+  border-color: black !important;
+  box-shadow: none !important;
+}
+
+select {
+  width: 200px;
+  height: 50px;
+}
+
+@media only screen and (min-width: 680px) {
+  .booktabs {
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    width: 80%;
+    /* height: 300px; */
+    margin: 20px auto;
+  }
+  .tab-container {
+    background-color: rgb(46, 27, 46);
+  }
+  .tabBtn {
+    color: #d3d5dd;
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    min-width: fit-content;
+  }
+
+  .form-control {
+    width: 200px;
+    padding: 10px;
+  }
 }
