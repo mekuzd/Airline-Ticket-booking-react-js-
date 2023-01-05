@@ -27,7 +27,7 @@ function App() {
           <article className="section row my-4 justify-content-center ">
             <section className="col-sm-6"></section>
 
-            <section className="col-sm-6 p-4 ">
+            <section className="col-sm-6 p-1 ">
               <div>
                 <h3 className="text-light">Never miss an offer</h3>
                 <p className="text-light">
@@ -41,14 +41,22 @@ function App() {
                       Email Address
                     </label>{" "}
                     <br />
-                    <input type="text" className="homeInp border" id="Email" />
+                    <input
+                      type="text"
+                      className="homeInp border form-control"
+                      id="Email"
+                    />
                   </div>{" "}
                   <div>
                     <label htmlFor="city" className="text-light">
                       Preferred city of departure
                     </label>{" "}
                     <br />
-                    <input type="text" className="homeInp border" id="city" />
+                    <input
+                      type="text"
+                      className="homeInp form-control border"
+                      id="city"
+                    />
                   </div>{" "}
                   <div>
                     <input type="checkbox" id="checkbox" />
