@@ -11,6 +11,7 @@ const BookTabs = () => {
   const handleTab = (id) => {
     settoggle(id);
   };
+
   return (
     <main className="booktabs shadow ">
       <div className="d-sm-flex flex-wrap justify-content-between tab-container  ">

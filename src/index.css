@@ -10,7 +10,22 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+.section {
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  background-image: url("../public/background.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  padding: 5px;
+  max-height: auto;
+}
+.homeInp:focus {
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+  padding: 10px;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -64,7 +79,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  position: fixed;
+  position: sticky;
+  top: 0px;
   width: 100%;
   background-color: white;
 }
@@ -100,9 +116,7 @@ nav {
 .error img {
   width: 100%;
 }
-.travel {
-  margin-top: 80px;
-}
+
 .planeImg {
   border-radius: 100px;
   width: 100%;
@@ -151,7 +165,8 @@ li {
 
 select {
   width: 200px;
-  height: 50px;
+  padding: 10px;
+  /* height: 50px; */
 }
 .bookNowBtn {
   padding: 10px;
@@ -175,15 +190,36 @@ select {
   color: white;
 }
 
+.homebtn {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+}
+.homebtn:hover {
+  border-color: rgb(46, 27, 46);
+  background-color: rgb(46, 27, 46);
+  color: white;
+}
 @media only screen and (min-width: 680px) {
+  .section {
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    background-image: url("../public/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    max-height: auto;
+  }
   .booktabs {
     border: 2px solid lightgray;
     border-radius: 30px;
     width: 80%;
-    /* height: 300px; */
     margin: 20px auto;
   }
   .tab-container {
+    border-radius: 10px 10px 0px 0px;
     background-color: rgb(46, 27, 46);
   }
   .tabBtn {
@@ -200,4 +236,23 @@ select {
     width: 200px;
     padding: 10px;
   }
+}
+
+.HomeFooter {
+  height: 80px;
+  border-left: 3px solid rgb(46, 27, 46);
+}
+footer h5,
+p:hover {
+  color: rgb(3, 151, 250);
+}
+.footer {
+  height: 50px;
+}
+
+.HomeTop {
+  background-image: url("../public/bgHome.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
