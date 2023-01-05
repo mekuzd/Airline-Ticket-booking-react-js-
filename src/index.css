@@ -83,10 +83,19 @@ nav {
   top: 0px;
   width: 100%;
   background-color: white;
+
+  background-image: linear-gradient(
+    to right,
+    rgb(3, 151, 250),
+    white,
+    rgb(3, 151, 250)
+  );
+}
+.Explore {
+  color: goldenrod;
 }
 .booktabs {
-  /* margin: auto 20px; */
-  margin: auto;
+  margin: 30px auto;
   border: 2px solid lightgray;
   border-radius: 20px;
   width: 95%;
@@ -202,6 +211,9 @@ select {
   color: white;
 }
 @media only screen and (min-width: 680px) {
+  .Explore {
+    color: rgb(7, 1, 1);
+  }
   .section {
     width: 80%;
     margin: auto;
@@ -216,7 +228,7 @@ select {
     border: 2px solid lightgray;
     border-radius: 30px;
     width: 80%;
-    margin: 20px auto;
+    margin: 30px auto;
   }
   .tab-container {
     border-radius: 10px 10px 0px 0px;
@@ -251,7 +263,7 @@ p:hover {
 }
 
 .HomeTop {
-  background-image: url("../public/bgHome.png");
+  background-image: url("../public/airplane-flight.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

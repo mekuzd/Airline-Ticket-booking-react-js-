@@ -10,12 +10,12 @@ function App() {
         <section>
           <main className="d-flex justify-content-center align-items-center HomeTop">
             <div>
-              <h1 className="text-white">
+              <h1 className="px-4 fw-bold Explore">
                 Travel to new destinations with us.
               </h1>
-              <h4 className="text-center text-white">
+              <h3 className="text-center Explore my-3  fw-bold">
                 Explore the world together
-              </h4>
+              </h3>
               <div className="text-center">
                 <button className="bookNowBtn border mt-5">Book Now</button>
               </div>
