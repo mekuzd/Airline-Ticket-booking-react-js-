@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaBars, FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { FaBars, FaAngleDown, FaAngleUp, FaUserCircle } from "react-icons/fa";
 import { AiOutlineLogin } from "react-icons/ai";
 
 import Sidebar from "./Sidebar";
@@ -41,7 +41,7 @@ const Navbar = () => {
 
       {/* nav links on desktop */}
       <div className="d-none d-md-flex  justify-content-center ">
-        <li className="links mx-4 fs-6 ">BookNow</li>
+        <li className="links mx-4 fs-6 ">Book Now</li>
         <li className="links mx-4 fs-6 ">Explore </li>
         <li
           className="links ms-2 fs-6 position-relative "
@@ -58,6 +58,9 @@ const Navbar = () => {
 
       <div className="d-none d-md-flex justify-content-center align-items-center">
         <Link to={"/signup"} className="links fs-5 ">
+          <span className="mx-2">
+            <FaUserCircle />
+          </span>
           SignUp
         </Link>
         <Link to={"/login"} className="mx-4 links fs-5  ">

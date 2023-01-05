@@ -13,7 +13,7 @@ const BookTabs = () => {
   };
   return (
     <main className="booktabs shadow ">
-      <div className="d-sm-flex justify-content-between tab-container  ">
+      <div className="d-sm-flex flex-wrap justify-content-between tab-container  ">
         <button
           className={` ${toggle == 0 ? "activeTab" : "tabBtn"}`}
           onClick={() => handleTab(0)}

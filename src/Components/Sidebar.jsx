@@ -2,6 +2,7 @@ import { FaAngleDown } from "react-icons/fa";
 import { AiOutlineLogin } from "react-icons/ai";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = ({ show, handleClose }) => {
   const [dropdown, setdropdown] = useState(false);
@@ -31,7 +32,7 @@ const Sidebar = ({ show, handleClose }) => {
             className="text-dark  fs-6"
             onClick={() => setdropdown(!dropdown)}
           >
-            Aboutus{" "}
+            About us{" "}
             <span>
               <FaAngleDown />
             </span>
@@ -45,13 +46,15 @@ const Sidebar = ({ show, handleClose }) => {
           </li>
         </div>
         <div className="d-flex justify-content-center align-items-center">
-          <li className="text-dark fs-5">SignUp</li>
-          <li className="mx-4 text-dark fs-5">
+          <Link to={"/Signup"} className="text-dark fs-5">
+            SignUp
+          </Link>
+          <Link to={"/login"} className="mx-4 text-dark fs-5">
             Login{" "}
             <span>
               <AiOutlineLogin />
             </span>
-          </li>
+          </Link>
         </div>
       </Offcanvas.Body>
     </Offcanvas>

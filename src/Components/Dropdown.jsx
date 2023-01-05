@@ -1,6 +1,6 @@
 const Dropdown = () => {
   return (
-    <div className="card  card-body ps-0">
+    <div className="card   card-body ps-0">
       <ul>
         <li className="links">Contacts</li>
         <li className="links">Team</li>

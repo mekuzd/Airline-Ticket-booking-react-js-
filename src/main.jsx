@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Suspense } from "react";
+import ContextProvider from "../Provider/Context";
 
 const App = React.lazy(() => import("./App"));
 const Signup = React.lazy(() => import("./Pages/SignUp"));
@@ -28,14 +29,16 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Suspense
-      fallback={
-        <div className="loading ">
-          <div className="text-info spinner-border"></div>
-        </div>
-      }
-    >
-      <RouterProvider router={router} />
-    </Suspense>
+    <ContextProvider>
+      <Suspense
+        fallback={
+          <div className="loading ">
+            <div className="text-info spinner-border"></div>
+          </div>
+        }
+      >
+        <RouterProvider router={router} />
+      </Suspense>
+    </ContextProvider>
   </React.StrictMode>,
 );
