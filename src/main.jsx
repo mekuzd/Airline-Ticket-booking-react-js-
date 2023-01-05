@@ -8,7 +8,7 @@ import ContextProvider from "../Provider/Context";
 const App = React.lazy(() => import("./App"));
 const Signup = React.lazy(() => import("./Pages/SignUp"));
 const Login = React.lazy(() => import("./Pages/Login"));
-const Error404 = React.lazy(() => import("./pages/error404"));
+const Error404 = React.lazy(() => import("./Pages/Error404"));
 
 const router = createBrowserRouter([
   {
