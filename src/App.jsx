@@ -59,9 +59,9 @@ function App() {
                     />
                   </div>{" "}
                   <div>
-                    <input type="checkbox" id="checkbox" />
-                    <label htmlFor="checkbox" className="fs-6 text-light">
-                      I would like to get offrs and news from MekusAirline i
+                    <input type="checkbox" id="checkbox" className="my-2" />
+                    <label htmlFor="checkbox" className="fs-6  text-light">
+                      I would like to get offers and news from MekusAirline i
                       have read and understood the privacy policy
                     </label>
                   </div>

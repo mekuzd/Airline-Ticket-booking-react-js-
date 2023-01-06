@@ -9,6 +9,7 @@ const App = React.lazy(() => import("./App"));
 const Signup = React.lazy(() => import("./Pages/SignUp"));
 const Login = React.lazy(() => import("./Pages/Login"));
 const Error404 = React.lazy(() => import("./Pages/Error404"));
+const Explore = React.lazy(() => import("./Pages/Explore"));
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <Signup />,
+  },
+  {
+    path: "/explore",
+    element: <Explore />,
   },
 ]);
 

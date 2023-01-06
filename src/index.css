@@ -102,7 +102,7 @@ nav {
 }
 
 .activeTab {
-  color: rgb(214, 112, 112);
+  color: rgb(18, 103, 173);
   border: none;
   padding: 10px;
   width: 250px;
@@ -214,6 +214,41 @@ select {
   .Explore {
     color: rgb(7, 1, 1);
   }
+
+  .DubaiExplore {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* align-items: center; */
+  }
+  .dubaiAvi5 {
+    margin: 0px !important;
+  }
+  .dubaiAvi3 {
+    margin: 0px !important;
+  }
+  .DubaiExp {
+    cursor: pointer;
+    width: 50%;
+    /* height: 100px ; */
+  }
+  .FirstClassrow {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .classes {
+    cursor: pointer;
+    padding: 0px;
+    width: 45%;
+    height: 48% !important;
+    margin: 5px;
+  }
   .section {
     width: 80%;
     margin: auto;
@@ -232,10 +267,10 @@ select {
   }
   .tab-container {
     border-radius: 10px 10px 0px 0px;
-    background-color: rgb(46, 27, 46);
+    background-color: rgb(0, 123, 206);
   }
   .tabBtn {
-    color: #d3d5dd;
+    color: #ffffff;
     background-color: transparent;
     font-size: 18px;
     border: none;
@@ -248,23 +283,69 @@ select {
     width: 200px;
     padding: 10px;
   }
+
+  .activeTab {
+    color: rgb(2, 0, 10);
+    border: none;
+    padding: 10px;
+    width: 250px;
+    background-color: transparent;
+  }
 }
 
 .HomeFooter {
   height: 80px;
   border-left: 3px solid rgb(46, 27, 46);
 }
-footer h5,
-p:hover {
+footer p:hover {
   color: rgb(3, 151, 250);
 }
 .footer {
   height: 50px;
 }
-
+h5 {
+  color: rgb(3, 151, 250);
+}
 .HomeTop {
   background-image: url("../public/airplane-flight.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 500px;
+}
+
+.dubaiAvi {
+  background-image: url("../public/dubai.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.dubaiAvi2 {
+  background-image: url("../public/first-class-dessert.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.dubaiAvi3 {
+  background-image: url("../public/business-class-meal.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.dubaiAvi4 {
+  background-image: url("../public/economy-class-chocolate.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.dubaiAvi5 {
+  background-image: url("../public/premium-economy.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.underline {
+  width: 3rem;
+  height: 0.21rem;
+  background: rgb(173, 36, 36);
 }

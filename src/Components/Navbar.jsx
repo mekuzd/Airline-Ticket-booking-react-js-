@@ -40,9 +40,11 @@ const Navbar = () => {
       />
 
       {/* nav links on desktop */}
-      <div className="d-none d-md-flex  justify-content-center ">
+      <div className="d-none d-md-flex  justify-content-center align-items-center ">
         <li className="links mx-4 fs-6 ">Book Now</li>
-        <li className="links mx-4 fs-6 ">Explore </li>
+        <Link to={"/explore"} className="links mx-4  fs-6 ">
+          Explore{" "}
+        </Link>
         <li
           className="links ms-2 fs-6 position-relative "
           onMouseOver={showDropdown}
