@@ -98,7 +98,7 @@ h3 {
 }
 
 .activeTab {
-  color: rgb(0, 0, 58);
+  color: blue;
   border: none;
   padding: 10px;
   width: 250px;

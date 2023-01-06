@@ -3,9 +3,9 @@ import DefaultLayout from "../Layouts/DefaultLayouts";
 const Explore = () => {
   return (
     <DefaultLayout>
-      <div className="my-4">
-        <p className="text-center">FLYING WITH MEKUZAIRLINE</p>
-        <h1 className="text-center">Make it an incredible journey</h1>
+      <div className="my-4 p-4">
+        <p className="text-center">FLYING WITH MEKUZ-AIRLINE</p>
+        <h2 className="text-center">Make it an incredible journey</h2>
         <p className="text-center">
           Explore the Emirates experience and plan an unforgettable trip beyond
           your flight.

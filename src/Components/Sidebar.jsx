@@ -19,9 +19,9 @@ const Sidebar = ({ show, handleClose }) => {
     >
       <Offcanvas.Header closeButton>
         {" "}
-        <div to={"/"} className="fs-3 fw-bold text-dark">
+        <Link to={"/"} className="fs-3 fw-bold text-dark">
           Mekus Airline
-        </div>
+        </Link>
       </Offcanvas.Header>
       <Offcanvas.Body>
         {" "}
