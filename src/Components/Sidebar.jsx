@@ -27,7 +27,9 @@ const Sidebar = ({ show, handleClose }) => {
         {" "}
         <div className=" d-column-flex justify-content-between align-items-center ">
           <li className=" fs-6">BookNow</li>
-          <li className="  fs-6">Explore </li>
+          <Link to={"/explore"} className="  fs-6">
+            Explore Dubai{" "}
+          </Link>
           <li
             className="text-dark  fs-6"
             onClick={() => setdropdown(!dropdown)}
