@@ -2,9 +2,9 @@ const Dropdown = () => {
   return (
     <div className="card   card-body ps-0">
       <ul>
-        <li className="links">Contacts</li>
-        <li className="links">Team</li>
-        <li className="links">Testimonials</li>
+        <li className="dropdown">Contacts</li>
+        <li className="dropdown">Team</li>
+        <li className="dropdown">Testimonials</li>
       </ul>
     </div>
   );
