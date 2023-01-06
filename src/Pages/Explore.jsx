@@ -30,7 +30,7 @@ const Explore = () => {
             <div className=" p-3 shadow classes  dubaiAvi2">
               <div>
                 <p>cabin features</p>
-                <h4>First class</h4>
+                <h6>First class</h6>
                 <p>learn more</p>
               </div>
             </div>
@@ -38,7 +38,7 @@ const Explore = () => {
             <div className=" p-3 my-3 shadow classes  dubaiAvi3">
               <div>
                 <p>cabin features</p>
-                <h4>Buisness class</h4>
+                <h6>Buisness class</h6>
                 <p>learn more</p>
               </div>
             </div>
@@ -46,7 +46,7 @@ const Explore = () => {
             <div className=" p-3 shadow classes  dubaiAvi4">
               <div>
                 <p>cabin features</p>
-                <h4>Premium-Economy</h4>
+                <h6>Premium-Economy</h6>
                 <p>learn more</p>
               </div>
             </div>
@@ -54,7 +54,7 @@ const Explore = () => {
               {" "}
               <div>
                 <p>cabin features</p>
-                <h4>Economy class</h4>
+                <h6>Economy class</h6>
                 <p>learn more</p>
               </div>
             </div>

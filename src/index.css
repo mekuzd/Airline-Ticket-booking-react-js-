@@ -91,8 +91,13 @@ nav {
     rgb(3, 151, 250)
   );
 }
-.Explore {
-  color: goldenrod;
+.HomeTop {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(3, 151, 250),
+    white,
+    rgb(3, 151, 250)
+  );
 }
 .booktabs {
   margin: 30px auto;
@@ -220,8 +225,7 @@ select {
     margin: auto;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    /* align-items: center; */
+    padding: 0px !important;
   }
   .dubaiAvi5 {
     margin: 0px !important;
@@ -232,13 +236,14 @@ select {
   .DubaiExp {
     cursor: pointer;
     width: 50%;
-    /* height: 100px ; */
+    padding: 6px;
   }
   .FirstClassrow {
-    max-width: 50%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
+    align-items: baseline;
     padding: 0px !important;
     margin: 0px !important;
   }
@@ -246,6 +251,7 @@ select {
     cursor: pointer;
     padding: 0px;
     width: 45%;
+    padding: 10px !important;
     height: 48% !important;
     margin: 5px;
   }
@@ -253,7 +259,7 @@ select {
     width: 80%;
     margin: auto;
     border-radius: 30px;
-    background-image: url("../public/background.png");
+    background-image: url("../background.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5px;
@@ -283,6 +289,12 @@ select {
     width: 200px;
     padding: 10px;
   }
+  .HomeTop {
+    background-image: url("../airplane-flight.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
 
   .activeTab {
     color: rgb(2, 0, 10);
@@ -306,12 +318,6 @@ footer p:hover {
 h5 {
   color: rgb(3, 151, 250);
 }
-.HomeTop {
-  background-image: url("../public/airplane-flight.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-}
 
 .dubaiAvi {
   background-image: url("../public/dubai.avif");
@@ -320,25 +326,25 @@ h5 {
   height: 500px;
 }
 .dubaiAvi2 {
-  background-image: url("../public/first-class-dessert.avif");
+  background-image: url("../first-class-dessert.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
 }
 .dubaiAvi3 {
-  background-image: url("../public/business-class-meal.avif");
+  background-image: url("../business-class-meal.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
 }
 .dubaiAvi4 {
-  background-image: url("../public/economy-class-chocolate.avif");
+  background-image: url("../economy-class-chocolate.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
 }
 .dubaiAvi5 {
-  background-image: url("../public/premium-economy.avif");
+  background-image: url("../premium-economy.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;

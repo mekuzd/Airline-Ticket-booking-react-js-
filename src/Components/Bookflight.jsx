@@ -1,4 +1,55 @@
+// import Http from "../Config/Http";
+import { useState, useEffect } from "react";
+import axios from "axios";
 const Bookflight = ({ toggle }) => {
+  // const [products, setproducts] = useState([]);
+
+  const options = {
+    method: "GET",
+    url: "https://airport-info.p.rapidapi.com/airport",
+    headers: {
+      "X-RapidAPI-Key": "2dffe9ac03msh31126f98f89fdefp169feejsnabb49c40ce01",
+      "X-RapidAPI-Host": "airport-info.p.rapidapi.com",
+    },
+  };
+
+  axios.interceptors.request.use(
+    (config) => {
+      config.headers["X-RapidAPI-Key"] =
+        "2dffe9ac03msh31126f98f89fdefp169feejsnabb49c40ce01";
+      return config;
+    },
+    (error) => {
+      return Promise.reject(error);
+    },
+  );
+
+  let isMounted = true;
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        axios
+          .request(options)
+          .then(function (response) {
+            console.log(response.data);
+          })
+          .catch(function (error) {
+            console.error(error);
+          });
+      } catch (error) {
+        console.log("error");
+      }
+    };
+
+    if (isMounted) {
+      fetchProduct();
+    }
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   return (
     <div className={` ${toggle == 0 ? "activetabcontent" : "tabcontent"}`}>
       <h4 className="ms-3">flights</h4>

@@ -41,11 +41,11 @@ const Navbar = () => {
 
       {/* nav links on desktop */}
       <div className="d-none d-md-flex  justify-content-center align-items-center ">
-        <li className="links mx-4 fs-6 ">Book Now</li>
+        <Link className="links mx-4 fs-6 ">Book Now</Link>
         <Link to={"/explore"} className="links mx-4  fs-6 ">
           Explore Dubai{" "}
         </Link>
-        <li
+        <Link
           className="links ms-2 fs-6 position-relative "
           onMouseOver={showDropdown}
           onMouseOut={closeDropdown}
@@ -55,7 +55,7 @@ const Navbar = () => {
             {dropdown ? <FaAngleUp /> : <FaAngleDown />}
           </span>
           {dropdown && <Dropdown />}
-        </li>
+        </Link>
       </div>
 
       <div className="d-none d-md-flex justify-content-center align-items-center">
