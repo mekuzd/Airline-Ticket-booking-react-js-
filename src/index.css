@@ -86,13 +86,21 @@ nav .bars {
 h3 {
   color: white;
 }
+
 .HomeTop button {
-  /* margin-top: auto; */
+  padding: 10px;
+  border-radius: 10px;
   width: 200px;
+}
+
+.HomeTop button:hover {
+  border-color: rgb(0, 0, 58);
+  background-color: rgb(0, 0, 58);
+  color: white;
 }
 .booktabs {
   margin: 30px auto;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   border-radius: 20px;
   width: 95%;
 }
@@ -179,10 +187,7 @@ select {
   padding: 10px;
   /* height: 50px; */
 }
-.bookNowBtn {
-  padding: 10px;
-  border-radius: 10px;
-}
+
 .tabcontentBtn {
   padding: 10px;
   border-radius: 10px;
@@ -192,12 +197,6 @@ select {
 .tabcontentBtn:hover {
   border-color: rgb(0, 0, 58);
   background-color: rgb(0, 0, 58);
-  color: white;
-}
-
-.bookNowBtn:hover {
-  border-color: rgb(46, 27, 46);
-  background-color: rgb(46, 27, 46);
   color: white;
 }
 
@@ -211,6 +210,29 @@ select {
   border-color: rgb(0, 0, 58);
   background-color: rgb(0, 0, 58);
   color: white;
+}
+
+datalist {
+  position: absolute;
+  max-height: 20em;
+  border: 0 none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+datalist option {
+  /* font-size: 0.8em;
+  padding: 0.3em 1em; */
+  color: black;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+datalist option:hover,
+datalist option:focus {
+  color: black;
+  background-color: white;
+  outline: 0 none;
 }
 
 @media only screen and (min-width: 680px) {
@@ -264,8 +286,8 @@ select {
     max-height: auto;
   }
   .booktabs {
-    border: 2px solid lightgray;
-    border-radius: 30px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
     width: 80%;
     margin: 30px auto;
   }

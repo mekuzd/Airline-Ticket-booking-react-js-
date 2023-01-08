@@ -1,12 +1,69 @@
+import axios from "axios";
+import { useEffect } from "react";
 const Bookflight = ({ toggle }) => {
+  // const options = {
+  //   method: "GET",
+  //   url: "https://airlabs.co/api/v9/airports?iata_code=CDG&api_key=c61c5db6-57d9-4485-9fb9-ffae70832e22",
+  //   headers: {
+  //     "X-RapidAPI-Key": "2dffe9ac03msh31126f98f89fdefp169feejsnabb49c40ce01",
+  //     "X-RapidAPI-Host": "iata-and-icao-codes.p.rapidapi.com",
+  //   },
+  // };
+  let isMounted = true;
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const response = await fetch(
+          "https://airlabs.co/api/v9/cities?city_code=SIN&api_key=c61c5db6-57d9-4485-9fb9-ffae70832e22",
+        );
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.log("error");
+        setSelcategory([]);
+      }
+    };
+    if (isMounted) {
+      fetchProduct();
+    }
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  // axios.interceptors.request.use(
+  //   (config) => {
+  //     config.headers["X-RapidAPI-Key"] =
+  //       "2dffe9ac03msh31126f98f89fdefp169feejsnabb49c40ce01";
+  //     return config;
+  //   },
+  //   (error) => {
+  //     return Promise.reject(error);
+  //   },
+  // );
+  // axios
+  //   .request(options)
+  //   .then(function (response) {
+  //     console.log(response.data);
+  //   })
+  //   .catch(function (error) {
+  //     console.error(error);
+  //   });
+
   return (
     <div className={` ${toggle == 0 ? "activetabcontent" : "tabcontent"}`}>
       <h4 className="ms-3">flights</h4>
       <form action="" className="form-control border-0 w-100">
-        <div className="d-flex flex-wrap gap-3  align-items-center">
+        <div className="d-flex flex-wrap gap-3  align-items-center  ">
           <div>
             <label htmlFor="from">From</label> <br />
-            <input className="form-control" type="text" id="from" />
+            <input className="form-control" list="From" id="from" />
+            <datalist id="From">
+              <option value="Edge" />
+              <option value="year" />
+              <option value="goal" />
+              <option value="Edgesss" />
+            </datalist>
           </div>
           <div>
             <label htmlFor="to">To</label> <br />
@@ -61,7 +118,7 @@ const Bookflight = ({ toggle }) => {
             </select>
           </div>
           <div>
-            <button className="tabcontentBtn">Show flight</button>
+            <button className="tabcontentBtn mt-3">Show flight</button>
           </div>
         </div>
       </form>
