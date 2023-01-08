@@ -70,7 +70,6 @@ const Signup = () => {
       let newStore = [...Store, { ...state.current }];
       setStore(newStore);
       localStorage.setItem("users", JSON.stringify(newStore));
-      console.log(Store);
       setalert(true);
       navigate("/login");
       setalertMessage("Registered Succesfully");
