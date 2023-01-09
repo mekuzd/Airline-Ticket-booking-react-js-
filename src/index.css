@@ -219,12 +219,12 @@ datalist {
   overflow-x: hidden;
   overflow-y: auto;
 }
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 546px) {
   .activeTab {
     color: rgb(2, 0, 10);
     border: none;
     padding: 10px;
-    width: 330px;
+    width: 250px;
     background-color: white;
   }
   .tabBtn {
@@ -233,7 +233,7 @@ datalist {
     font-size: 18px;
     border: none;
     padding: 10px;
-    width: 330px;
+    width: 250px;
     min-width: fit-content;
   }
   .tab-container {
