@@ -301,7 +301,7 @@ datalist option:focus {
     font-size: 18px;
     border: none;
     padding: 10px;
-    width: 250px;
+    width: 290px;
     min-width: fit-content;
   }
 
@@ -314,7 +314,7 @@ datalist option:focus {
     color: rgb(2, 0, 10);
     border: none;
     padding: 10px;
-    width: 250px;
+    width: 290px;
     background-color: white;
   }
 }

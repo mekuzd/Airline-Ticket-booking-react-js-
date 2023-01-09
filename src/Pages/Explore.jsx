@@ -31,7 +31,8 @@ const Explore = () => {
               <div>
                 <p>cabin features</p>
                 <h6>First class</h6>
-                <p>learn more</p>
+                <div className="underline"></div>
+                <p className="my-2">learn more</p>
               </div>
             </div>
 
@@ -39,7 +40,8 @@ const Explore = () => {
               <div>
                 <p>cabin features</p>
                 <h6>Buisness class</h6>
-                <p>learn more</p>
+                <div className="underline"></div>
+                <p className="my-2">learn more</p>
               </div>
             </div>
 
@@ -47,7 +49,9 @@ const Explore = () => {
               <div>
                 <p>cabin features</p>
                 <h6>Premium-Economy</h6>
-                <p>learn more</p>
+                <div className="underline"></div>
+
+                <p className="my-2">learn more</p>
               </div>
             </div>
             <div className=" p-3 my-3 shadow classes  dubaiAvi5">
@@ -55,7 +59,9 @@ const Explore = () => {
               <div>
                 <p>cabin features</p>
                 <h6>Economy class</h6>
-                <p>learn more</p>
+                <div className="underline"></div>
+
+                <p className="my-2">learn more</p>
               </div>
             </div>
           </main>
