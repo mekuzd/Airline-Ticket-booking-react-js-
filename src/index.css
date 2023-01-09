@@ -220,21 +220,6 @@ datalist {
   overflow-y: auto;
 }
 
-datalist option {
-  /* font-size: 0.8em;
-  padding: 0.3em 1em; */
-  color: black;
-  background-color: #ccc;
-  cursor: pointer;
-}
-
-datalist option:hover,
-datalist option:focus {
-  color: black;
-  background-color: white;
-  outline: 0 none;
-}
-
 @media only screen and (min-width: 680px) {
   .HomeTop {
     height: 500px;
@@ -301,7 +286,7 @@ datalist option:focus {
     font-size: 18px;
     border: none;
     padding: 10px;
-    width: 290px;
+    width: 330px;
     min-width: fit-content;
   }
 
@@ -314,7 +299,7 @@ datalist option:focus {
     color: rgb(2, 0, 10);
     border: none;
     padding: 10px;
-    width: 290px;
+    width: 330px;
     background-color: white;
   }
 }

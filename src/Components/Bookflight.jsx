@@ -1,9 +1,20 @@
+import { useState } from "react";
+
 const Bookflight = ({ toggle }) => {
+  const [showReturn, setShowreturn] = useState(true);
+  const handleRemoveReturnDate = (e) => {
+    if (e.target.value == "one-way") {
+      setShowreturn(false);
+    } else {
+      setShowreturn(true);
+    }
+  };
+
   return (
     <div className={` ${toggle == 0 ? "activetabcontent" : "tabcontent"}`}>
       <h4 className="ms-3">flights</h4>
       <form action="" className="form-control border-0 w-100">
-        <div className="d-flex flex-wrap gap-3  align-items-center  ">
+        <div className="d-flex flex-wrap gap-2  align-items-center  ">
           <div>
             <label htmlFor="from">From</label> <br />
             <input className="form-control" id="from" />
@@ -17,13 +28,20 @@ const Bookflight = ({ toggle }) => {
             <label htmlFor="departure">depart </label> <br />
             <input className="form-control" type="date" id="departure" />
           </div>
-          <div className="">
-            <label htmlFor="return">return</label> <br />
-            <input className="form-control" type="date" id="return" />
-          </div>
+          {showReturn && (
+            <div className="">
+              <label htmlFor="return">return</label> <br />
+              <input className="form-control" type="date" id="return" />
+            </div>
+          )}
 
           <div className="mt-3">
-            <select name="" id="" className=" border">
+            <select
+              name=""
+              id=""
+              className=" border"
+              onChange={handleRemoveReturnDate}
+            >
               <option value="return">return</option>
               <option value="one-way">one-way</option>
               <option value="Multi-city">Multi-city</option>
