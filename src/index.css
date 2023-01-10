@@ -219,29 +219,26 @@ datalist {
   overflow-x: hidden;
   overflow-y: auto;
 }
-@media only screen and (min-width: 546px) {
-  .activeTab {
-    color: rgb(2, 0, 10);
-    border: none;
-    padding: 10px;
-    width: 250px;
-    background-color: white;
-  }
-  .tabBtn {
-    color: #ffffff;
-    background-color: transparent;
-    font-size: 18px;
-    border: none;
-    padding: 10px;
-    width: 250px;
-    min-width: fit-content;
-  }
-  .tab-container {
-    border-radius: 10px 10px 0px 0px;
-    background-color: rgb(0, 0, 58);
-  }
+
+.GreatFares {
+  /* width: 80%; */
+  padding: 10px;
+  margin: 30px auto;
 }
 
+.GreatFares img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.GreatFares article {
+  padding: 10px;
+  width: 100%;
+}
+.doha {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
 @media only screen and (min-width: 680px) {
   .HomeTop {
     height: 500px;
@@ -302,6 +299,73 @@ datalist {
   .form-control {
     width: 200px;
     padding: 10px;
+  }
+
+  .GreatFares {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    height: 60%;
+    margin: 30px auto;
+  }
+  .GreatFares .seattle {
+    width: 50%;
+    cursor: pointer;
+  }
+  .GreatFares .doha {
+    cursor: pointer;
+    width: 50%;
+    height: 575px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .class {
+    width: 45%;
+  }
+  .GreatFares h2,
+  h4 {
+    font-size: 15px;
+  }
+  .doha p {
+    font-size: 13px;
+    margin: 2px;
+    padding: 0px;
+  }
+  .seattle article {
+    padding: 7px;
+  }
+  .doha article {
+    padding: 5px;
+  }
+
+  .doha {
+    display: block;
+    gap: 15px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 546px) {
+  .activeTab {
+    color: rgb(2, 0, 10);
+    border: none;
+    padding: 10px;
+    width: 250px;
+    background-color: white;
+  }
+  .tabBtn {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    min-width: fit-content;
+  }
+  .tab-container {
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(0, 0, 58);
   }
 }
 

@@ -1,5 +1,6 @@
 import { react } from "react";
 import BookTabs from "./Components/BookTabs";
+import GreatFares from "./Components/GreatFares";
 
 import DefaultLayout from "./Layouts/DefaultLayouts";
 
@@ -22,7 +23,7 @@ function App() {
             </div>
           </main>
           <BookTabs />
-
+          <GreatFares />
           {/* backgroundImage session  */}
           <article className="section row my-4 justify-content-center ">
             <section className="col-sm-6"></section>
