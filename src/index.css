@@ -314,13 +314,9 @@ datalist {
   .GreatFares .doha {
     cursor: pointer;
     width: 50%;
-    height: 575px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
   }
   .class {
-    width: 45%;
+    width: 50%;
   }
   .GreatFares h2,
   h4 {
@@ -339,7 +335,6 @@ datalist {
   }
 
   .doha {
-    display: block;
     margin-top: 0px;
   }
 }
