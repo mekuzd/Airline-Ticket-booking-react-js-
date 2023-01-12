@@ -11,7 +11,7 @@ function App() {
         <section>
           <main className="d-flex  justify-content-center align-items-center HomeTop">
             <div>
-              <h1 className="px-4 text-center my-4 fw-bold Explore">
+              <h1 className="px-4 text-center my-4 fw-bold Explore   animate__animated animate__heartBeat">
                 Travel to new destinations with us.
               </h1>
               <h3 className="text-center Explore my-3  fw-bold">
@@ -25,7 +25,11 @@ function App() {
           <BookTabs />
           <GreatFares />
           {/* backgroundImage session  */}
-          <article className="section row my-4 justify-content-center ">
+          <article
+            className="section row my-4 justify-content-center "
+            data-aos="fade-in"
+            data-aos-duration="3000"
+          >
             <section className="col-sm-6"></section>
 
             <section className="col-sm-6 p-1 ">

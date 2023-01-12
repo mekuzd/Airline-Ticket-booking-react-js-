@@ -14,7 +14,7 @@ const Explore = () => {
 
       <section>
         <div className="p-3 DubaiExplore ">
-          <main className=" DubaiExp ">
+          <main className=" DubaiExp animate__animated animate__backInDown ">
             <div className=" shadow-lg dubaiAvi p-4">
               <div>
                 <p className="mt-4">DUBAI EXPERIENCE</p>
@@ -26,7 +26,7 @@ const Explore = () => {
           </main>
 
           {/* firstclass row  */}
-          <main className="py-3 FirstClassrow">
+          <main className="py-3 FirstClassrow animate__animated animate__heartBeat">
             <div className=" p-3 shadow classes  dubaiAvi2">
               <div>
                 <p>cabin features</p>

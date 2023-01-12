@@ -15,27 +15,37 @@ const Bookflight = ({ toggle }) => {
       <h4 className="ms-3">flights</h4>
       <form action="" className="form-control border-0 w-100">
         <div className="d-flex flex-wrap gap-2  align-items-center  ">
-          <div>
-            <label htmlFor="from">From</label> <br />
-            <input className="form-control" id="from" />
+          <div className="form-floating ">
+            <input
+              type="text"
+              className="form-control"
+              id="from"
+              placeholder="name@example.com"
+            />
+            <label htmlFor="from">From</label>
           </div>
-          <div>
-            <label htmlFor="to">To</label> <br />
-            <input className="form-control" type="text" id="to" />
+          <div className="form-floating ">
+            <input
+              className="form-control"
+              type="text"
+              id="to"
+              placeholder="name@example.com"
+            />
+            <label htmlFor="to">To</label>
           </div>
 
-          <div>
-            <label htmlFor="departure">depart </label> <br />
+          <div className="form-floating ">
             <input className="form-control" type="date" id="departure" />
+            <label htmlFor="departure">depart </label>
           </div>
           {showReturn && (
-            <div className="">
-              <label htmlFor="return">return</label> <br />
+            <div className="form-floating">
               <input className="form-control" type="date" id="return" />
+              <label htmlFor="return">return</label>
             </div>
           )}
 
-          <div className="mt-3">
+          <div className="">
             <select
               name=""
               id=""
@@ -48,7 +58,7 @@ const Bookflight = ({ toggle }) => {
             </select>
           </div>
 
-          <div className="mt-3">
+          <div className="">
             <select name="" id="" className=" border">
               <option value="1 adult">1 adult</option>
               <option value="2 adult (12+years)">2 adult (12+years)</option>

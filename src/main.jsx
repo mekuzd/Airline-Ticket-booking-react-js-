@@ -4,7 +4,10 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Suspense } from "react";
 import ContextProvider from "../Provider/Context";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+// ..
+AOS.init();
 const App = React.lazy(() => import("./App"));
 const Signup = React.lazy(() => import("./Pages/SignUp"));
 const Login = React.lazy(() => import("./Pages/Login"));

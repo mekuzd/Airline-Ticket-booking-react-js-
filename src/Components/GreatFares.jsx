@@ -1,8 +1,16 @@
 const GreatFares = () => {
   return (
     <section>
-      <div className="GreatFares">
-        <main className="seattle">
+      <div
+        className="GreatFares"
+        data-aos="zoom-in-down"
+        data-aos-duration="2000"
+      >
+        <main
+          className="seattle"
+          data-aos="fade-up-right"
+          data-aos-duration="2000"
+        >
           <img src="../seattle.jpg" alt="" className="w-100" />
           <article className="shadow">
             <h4>Seattle</h4>
