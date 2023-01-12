@@ -86,7 +86,7 @@ const Signup = () => {
         <div className="col-sm-5 mt-5">
           <img src="../airplane-flight.webp" alt="" className="planeImg" />
         </div>
-        <div className="col-sm-5 d-flex mt-4  ">
+        <div className="col-sm-5 d-flex mt-3  ">
           {/* alertMessage  */}
 
           <form
