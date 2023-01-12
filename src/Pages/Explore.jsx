@@ -3,7 +3,7 @@ import DefaultLayout from "../Layouts/DefaultLayouts";
 const Explore = () => {
   return (
     <DefaultLayout>
-      <div className="my-4 p-4">
+      <div className="my-4 p-4 animate__animated animate__shakeY">
         <p className="text-center">FLYING WITH MEKUZ-AIRLINE</p>
         <h2 className="text-center">Make it an incredible journey</h2>
         <p className="text-center">
@@ -14,7 +14,7 @@ const Explore = () => {
 
       <section>
         <div className="p-3 DubaiExplore ">
-          <main className=" DubaiExp animate__animated animate__backInDown ">
+          <main className=" DubaiExp animate__animated animate__backInLeft ">
             <div className=" shadow-lg dubaiAvi p-4">
               <div>
                 <p className="mt-4">DUBAI EXPERIENCE</p>
@@ -26,7 +26,7 @@ const Explore = () => {
           </main>
 
           {/* firstclass row  */}
-          <main className="py-3 FirstClassrow animate__animated animate__heartBeat">
+          <main className="py-3 FirstClassrow animate__animated animate__bounceInRight">
             <div className=" p-3 shadow classes  dubaiAvi2">
               <div>
                 <p>cabin features</p>

@@ -57,7 +57,16 @@ a:hover {
   margin-top: 100px;
 }
 .registerbtn {
+  padding: 10px;
+  border-radius: 10px;
   min-width: 100px;
+  background-color: transparent;
+}
+
+.registerbtn:hover {
+  border-color: rgb(0, 0, 58);
+  background-color: rgb(0, 0, 58);
+  color: white;
 }
 
 nav {
@@ -132,7 +141,7 @@ h3 {
 }
 
 .planeImg {
-  border-radius: 100px;
+  border-radius: 20px;
   width: 100%;
 }
 .barsbtn {
@@ -366,12 +375,12 @@ footer p:hover {
 .footer {
   height: 50px;
 }
-h5 {
-  color: rgb(0, 0, 58);
+main h5 {
+  color: navy;
 }
 
 .dubaiAvi {
-  background-image: url("../public/dubai.avif");
+  background-image: url("../dubai.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;

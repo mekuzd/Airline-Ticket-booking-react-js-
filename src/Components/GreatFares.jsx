@@ -42,7 +42,7 @@ const GreatFares = () => {
             </div>
           </div>
 
-          <div className="d-flex  gap-2 justify-content-between">
+          <div className="d-flex  gap-2 justify-content-between align-items-end">
             <div className=" class">
               <img src="../washington.jpg" alt="" />
               <article className="shadow">

@@ -56,8 +56,8 @@ const Login = () => {
 
   return (
     <DefaultLayout>
-      <main className="row justify-content-center px-2">
-        <div className="col-sm-5 mt-3 ">
+      <main className="row justify-content-center  px-2">
+        <div className="col-sm-5 my-3 ">
           <img src="../airplane-flight.webp" alt="" className="planeImg" />
         </div>
         <div className="col-sm-5 d-flex mt-3 ">

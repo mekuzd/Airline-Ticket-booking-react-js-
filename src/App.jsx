@@ -11,14 +11,14 @@ function App() {
         <section>
           <main className="d-flex  justify-content-center align-items-center HomeTop">
             <div>
-              <h1 className="px-4 text-center my-4 fw-bold Explore   animate__animated animate__heartBeat">
+              <h1 className="px-4 text-center my-4 fw-bold Explore animate__animated animate__heartBeat">
                 Travel to new destinations with us.
               </h1>
-              <h3 className="text-center Explore my-3  fw-bold">
+              <h3 className="text-center Explore my-3 animate__animated animate__flash fw-bold">
                 Explore the world together
               </h3>
               <div className="text-center">
-                <button className="bookNowBtn border my-5">Book Now</button>
+                <button className=" border my-5">Book Now</button>
               </div>
             </div>
           </main>

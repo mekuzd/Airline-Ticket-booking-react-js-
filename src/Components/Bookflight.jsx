@@ -14,7 +14,7 @@ const Bookflight = ({ toggle }) => {
     <div className={` ${toggle == 0 ? "activetabcontent" : "tabcontent"}`}>
       <h4 className="ms-3">flights</h4>
       <form action="" className="form-control border-0 w-100">
-        <div className="d-flex flex-wrap gap-2  align-items-center  ">
+        <div className="d-flex flex-wrap gap-3  align-items-center  ">
           <div className="form-floating ">
             <input
               type="text"
@@ -45,7 +45,7 @@ const Bookflight = ({ toggle }) => {
             </div>
           )}
 
-          <div className="">
+          <div>
             <select
               name=""
               id=""
@@ -58,7 +58,7 @@ const Bookflight = ({ toggle }) => {
             </select>
           </div>
 
-          <div className="">
+          <div>
             <select name="" id="" className=" border">
               <option value="1 adult">1 adult</option>
               <option value="2 adult (12+years)">2 adult (12+years)</option>
@@ -69,7 +69,7 @@ const Bookflight = ({ toggle }) => {
             </select>
           </div>
 
-          <div className="mt-3">
+          <div>
             <select name="" id="" className=" border ">
               <option value="0 child">0 child</option>
               <option value="1 child">1 child</option>
@@ -80,7 +80,7 @@ const Bookflight = ({ toggle }) => {
             </select>
           </div>
 
-          <div className="mt-3">
+          <div>
             <select name="" id="" className=" border">
               <option value="0 infant">0 infant</option>
               <option value="1 infant">1 infant</option>
@@ -89,7 +89,7 @@ const Bookflight = ({ toggle }) => {
             </select>
           </div>
           <div>
-            <button className="tabcontentBtn mt-3">Show flight</button>
+            <button className="tabcontentBtn ">Show flight</button>
           </div>
         </div>
       </form>
