@@ -1,5 +1,6 @@
 import DefaultLayout from "../Layouts/DefaultLayouts";
 import { useRef, useState, useEffect, useContext } from "react";
+import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 
 import { Context } from "../../Provider/Context";
 import Alert from "../Components/Alert";
@@ -11,6 +12,7 @@ const Login = () => {
 
   const [alert, setalert] = useState(false);
   const [alertMessage, setalertMessage] = useState("");
+  const [showPassword, setshowPassword] = useState(false);
 
   useEffect(() => {
     email.current.focus();
@@ -85,13 +87,27 @@ const Login = () => {
             {/* password  */}
             <div className="ms-4">
               <label htmlFor="password">Password</label> <br />
-              <input
-                required
-                type="password"
-                id="password"
-                className="form-control"
-                onChange={(e) => (state.current.password = e.target.value)}
-              />
+              <div className="d-flex align-items-center gap-2">
+                <input
+                  required
+                  type={showPassword ? "text" : "password"}
+                  id="password"
+                  className="form-control"
+                  onChange={(e) => (state.current.password = e.target.value)}
+                />
+                <div>
+                  <button
+                    onClick={() => setshowPassword(!showPassword)}
+                    className="border-0 bg-transparent fs-3"
+                  >
+                    {showPassword ? (
+                      <AiOutlineEyeInvisible />
+                    ) : (
+                      <AiOutlineEye />
+                    )}
+                  </button>
+                </div>
+              </div>
             </div>{" "}
             <br />
             <div className="text-center">
