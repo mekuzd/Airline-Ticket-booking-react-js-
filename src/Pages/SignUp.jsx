@@ -83,7 +83,7 @@ const Signup = () => {
   return (
     <DefaultLayout>
       <main className="row justify-content-center px-2">
-        <div className="col-sm-5 my-auto">
+        <div className="col-sm-5 mt-5">
           <img src="../airplane-flight.webp" alt="" className="planeImg" />
         </div>
         <div className="col-sm-5 d-flex mt-4  ">
