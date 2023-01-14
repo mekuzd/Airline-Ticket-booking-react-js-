@@ -70,19 +70,40 @@ a:hover {
 }
 
 nav {
-  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  position: sticky;
-  top: 0px;
   width: 100%;
   background-color: rgb(0, 0, 58);
   z-index: 100;
 }
 nav a {
   color: #ffffff;
+}
+
+.scroll {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  transition: all 0.5s linear;
+}
+
+.scroll a {
+  transition: all 0.5s linear;
+
+  color: black;
+}
+.scroll .bars {
+  transition: all 0.5s linear;
+
+  color: black;
 }
 nav .bars {
   color: white;

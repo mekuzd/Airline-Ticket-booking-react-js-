@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaBars, FaAngleDown, FaAngleUp, FaUserCircle } from "react-icons/fa";
 import { AiOutlineLogin } from "react-icons/ai";
 
@@ -7,6 +7,7 @@ import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [changeNav, setchangeNav] = useState(false);
   const [show, setShow] = useState(false);
   const [dropdown, setdropdown] = useState(false);
   const showDropdown = () => {
@@ -16,11 +17,26 @@ const Navbar = () => {
     setdropdown(false);
   };
 
+  const changeNavbarClass = () => {
+    if (window.scrollY > 40) {
+      setchangeNav(true);
+    } else {
+      setchangeNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavbarClass);
+    return () => {
+      window.removeEventListener("scroll", changeNavbarClass);
+    };
+  }, [window.scrollY]);
+
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
 
   return (
-    <nav className="shadow">
+    <nav className={`shadow ${changeNav && "scroll"} `}>
       {/* mobile navbar  */}
 
       <Link to={"/"} className="fs-3">
