@@ -253,10 +253,7 @@ select {
   gap: 20px;
   margin-top: 20px;
 }
-.tab-container {
-  margin: auto;
-  width: 60%;
-}
+
 @media only screen and (min-width: 680px) {
   .HomeTop {
     height: 500px;
